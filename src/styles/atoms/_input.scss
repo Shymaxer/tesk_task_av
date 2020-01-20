@@ -47,12 +47,12 @@
 
     &--destination {
         width: 54.5%;
-        background-image: url(/src/images/icons/pin.svg);
+        background-image: url(../../src/images/icons/pin.svg);
     }
 
     &--when {
         width: 18.7%;
-        background-image: url(/src/images/icons/group.svg);
+        background-image: url(../../src/images/icons/group.svg);
         border-left: solid 1px $twilightBlue;
         border-right: solid 1px $twilightBlue;
         padding-left: 55px;
@@ -60,7 +60,7 @@
 
     &--duration {
         width: 18.7%;
-        background-image: url(/src/images/icons/bed.svg);
+        background-image: url(../../src/images/icons/bed.svg);
         padding-left: 57px;
         background-position: 20px;
     }

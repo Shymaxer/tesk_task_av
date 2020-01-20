@@ -1,0 +1,88 @@
+.title {
+    font-family: $LibreFranklin;
+    font-size: 48px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $white;
+
+    &.title--background {
+        //backdrop-filter: opacity(0.39);
+        background-image: linear-gradient(to right, rgba(red($topaz), green($topaz), blue($topaz), 0.39) 4%,
+                $topaz2 99%);
+    }
+
+    &--small {
+        font-size: 10px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 3px;
+    }
+}
+
+.description {
+    font-family: $LibreFranklin;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: 0.7px;
+    color: $white;
+}
+
+.tip {
+    font-family: $LibreFranklin;
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: 0.6px;
+    color: white;
+
+    &.tip--link {
+        color: $topaz;
+        text-transform: none;
+        cursor: pointer;
+    }
+}
+
+.destination {
+    font-family: $MuseoSansCyrl;
+    font-size: 36px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 36px;
+    letter-spacing: 1.41px;
+    color: $white;
+}
+
+@media (max-width: $small) {
+    .title {
+        font-size: 36px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        text-align: center;
+
+    }
+
+    .description {
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.57;
+        letter-spacing: 0.7px;
+        text-align: center;
+        margin-left: 37px;
+    }
+}

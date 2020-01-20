@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AV</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="dist/styles/index.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="burger-button">
+                <span class="burger-button-line"></span>
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <img class="logo__image" src="./src/images/icons/logo.svg" alt="">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="nav-item"><a href="#">DESTINATIONS</a></li>
+                    <li class="nav-item"><a href="#">Style of Travel</a></li">
+                    <li class="nav-item"><a href="#">About Us</a></li">
+                </ul>
+                <ul>
+                    <li class="nav-item nav-item--icon"><a href="#"><i class="icon-call"></i></a></li>
+                    <li class="nav-item nav-item--icon"><a href="#"><i class="icon-account"></i></a></li>
+                    <li class="nav-item nav-item--icon"><a href="#"><i class="icon-cart"></i></a></li">
+                </ul>
+            </nav>
+            <a href="#" class="cart-link"><i class="icon-cart"></i><i class="icon-circle"></i></a>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner-items">
+                <div class="banner-item">
+                    <div class="title-block">
+                        <h1 class="title">Travel <span class="title title--background">Agents</span> Portal</h1>
+                        <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            </p>
+                    </div>
+                    <a href="#" class="button">Create an Account</a>
+                    <p class="tip">Have an Account Already? <a class="tip tip--link" href="#">Login Now</a></p>
+                </div>
+
+                <div class="swiper-container">
+                  
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="image-background">
+                                <img class="slide-img" class="img" src="/src/images/johannes-ludwig-348591-unsplash.png" alt="">
+                                <div class="destinations-block">
+                                    <h4 class="title title--small">DESTINATIONS</h3>
+                                        <h2 class="destination">north america</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image-background">
+                                <img class="slide-img" src="/src/images/johannes-ludwig-348591-unsplash.png" alt="">
+                                <div class="destinations-block">
+                                    <h4 class="title title--small">DESTINATIONS</h3>
+                                        <h2 class="destination">australia</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image-background">
+                                <img class="slide-img" src="/src/images/johannes-ludwig-348591-unsplash.png" alt="">
+                                <div class="destinations-block">
+                                    <h4 class="title title--small">DESTINATIONS</h3>
+                                    <h2 class="destination">north america</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image-background">
+                                <img class="slide-img" src="/src/images/johannes-ludwig-348591-unsplash.png" alt="">
+                                <div class="destinations-block">
+                                    <h4 class="title title--small">DESTINATIONS</h3>
+                                    <h2 class="destination">north america</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                </div>
+            </div>
+            <form class="search-block">
+                <input type="text" class="input input--destination" placeholder="Where do you want to go?">
+                <input type="text" class="input input--when" placeholder="When">
+                <input type="text" class="input input--duration" placeholder="Duration">
+                <button type="submit" class="input input--submit"> </button>
+            </form>
+
+
+        </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+
+    <script src="src/js/index.js"></script>
+    <script src="src/js/slider.js"></script>
+    <script src="src/js/search-block.js"></script>
+</body>
+
+</html>

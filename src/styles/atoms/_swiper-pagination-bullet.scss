@@ -1,0 +1,14 @@
+
+.swiper-pagination  {
+
+    
+    .swiper-pagination-bullet{
+        width: 9px ;
+        height: 9px ;
+        margin-right: 10px ;
+        border: solid $white 1px ;
+        transform: rotate(45deg) ;
+        border-radius: 0 ;
+        margin: 2px 13px !important;
+    }
+}

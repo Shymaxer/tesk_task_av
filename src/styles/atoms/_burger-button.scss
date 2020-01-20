@@ -1,0 +1,60 @@
+.burger-button {
+    display: none;
+}
+
+@media (max-width: $small) {
+    .burger-button {
+        display: block;
+        position: relative;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        border: solid 0.5px #8ca0bf;
+    
+        .burger-button-line {
+            position: absolute;
+            top: 45%;
+            left: 30%;
+            width: 19px;
+            height: 1px;
+            background-color: $darkCerulean;
+            border-radius: 2px;
+            transition: all 0.3s ease-in-out;
+    
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 19px;
+                height: 1px;
+                background-color: $darkCerulean;
+                border-radius: 2px;
+                transition: all 0.3s ease-in-out;
+            }
+    
+            &::before {
+                top: -4px;
+            }
+    
+            &::after {
+                top: 4px;
+            }
+        }
+
+        &.burger-button-active {
+            .burger-button-line {
+                background-color: transparent;
+
+                &::before {
+                    top: 0;
+                    transform: rotate(45deg);
+                }
+                &::after {
+                    top: 0;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}

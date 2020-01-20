@@ -1,0 +1,39 @@
+[class^="icon"] {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.icon-call {
+  background-image: url($icons+"/call.svg");
+  width: 19px;
+  height: 19px;
+
+}
+
+.icon-account {
+  background-image: url($icons+"/account.svg");
+  width: 13px;
+  height: 19px;
+
+}
+
+.icon-cart {
+  background-image: url($icons+"/cart.svg");;
+  width: 23px;
+  height: 19px;
+
+}
+
+.icon-circle{
+  width: 7px;
+  height: 7px;
+  background-color: $aquaMarine;
+  border-radius: 100%;
+}
+
+
+
+
+@media (max-width: $small) {}

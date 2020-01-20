@@ -1,0 +1,14 @@
+.swiper-container{
+    width: 72.2% !important; 
+}
+.swiper-pagination-bullets{
+    top: 54% !important;
+    left: -1% !important;
+}
+
+
+@media (max-width: $small) {
+    .swiper-container{
+        display: none;
+    }
+}

@@ -1,0 +1,11 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $white;
+    height: 57px;
+    width: 100%;
+    display: none;
+}
+
+@media (max-width: $small) {}

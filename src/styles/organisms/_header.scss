@@ -1,0 +1,27 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: $aliceBlue;
+
+    .header-container {
+        height: 89px;
+        width: 90.4%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: auto;
+    }
+}
+
+
+@media (max-width: $small) {
+    .header {
+        .header-container {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

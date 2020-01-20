@@ -1,0 +1,155 @@
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+.input {
+
+    background-repeat: no-repeat;
+    background-position: 24px;
+    border: none;
+    outline: none;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    padding-left: 52px;
+    padding-right: 15px;
+    font-family: $LibreFranklin;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: 0.47px;
+    color: $darkGreyBlue;
+
+    &::placeholder {
+        color: $darkGreyBlue;
+    }
+
+    &--duration,
+    &--when,
+    &--submit {
+        &.input--active {}
+    }
+
+
+    &--destination {
+        width: 54.5%;
+        background-image: url(/src/images/icons/pin.svg);
+    }
+
+    &--when {
+        width: 18.7%;
+        background-image: url(/src/images/icons/group.svg);
+        border-left: solid 1px $twilightBlue;
+        border-right: solid 1px $twilightBlue;
+        padding-left: 55px;
+    }
+
+    &--duration {
+        width: 18.7%;
+        background-image: url(/src/images/icons/bed.svg);
+        padding-left: 57px;
+        background-position: 20px;
+    }
+
+    &--submit {
+        background: $topaz;
+        width: 8%;
+        height: 87px;
+        position: relative;
+        padding-bottom: 38px;
+
+
+        content: '';
+
+        &::before {
+            position: absolute;
+            background: $white;
+            right: 30%;
+            top: 50%;
+            content: ' ';
+            width: 35px;
+            height: 1px;
+        }
+
+        &::after {
+            position: absolute;
+            bottom: 38%;
+            right: 30%;
+            content: '';
+            width: 22px;
+            height: 22px;
+            border-top: solid 1px $white;
+            border-right: solid 1px $white;
+            transform: rotate(45deg);
+        }
+    }
+
+
+
+
+}
+
+@media (max-width: $small) {
+    .input {
+        padding-top: 18px;
+        padding-bottom: 20px;
+        width: 100%;
+        margin: 0;
+
+
+        &--duration,
+        &--when,
+        &--submit {
+            display: none;
+            opacity: 0;
+
+            &.input--active {
+                display: block;
+                opacity: 1;
+                animation: fadeInFromNone 1s ease;
+            }
+        }
+
+        &--when {
+            border: none;
+            background-position: 20px;
+        }
+
+        &--duration {
+            padding-left: 53px;
+        }
+
+        &--submit {
+            height: 60px;
+
+            &::before {
+                right: 45%;
+            }
+
+            &::after {
+                width: 16px;
+                height: 16px;
+                right: 45%;
+                bottom: 35%;
+
+            }
+        }
+
+
+
+    }
+}

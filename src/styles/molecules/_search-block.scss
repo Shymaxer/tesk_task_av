@@ -1,0 +1,20 @@
+.search-block{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 9.4%;
+    width: 81.4%;
+    box-shadow: 0 6px 21px 0 rgba(140, 160, 191, 0.24);
+    z-index: 30;
+}
+@media (max-width: $small) {
+    .search-block{
+        position: unset;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

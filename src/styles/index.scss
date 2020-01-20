@@ -1,0 +1,35 @@
+/* Config */
+@import "config/fonts";
+@import "config/paths";
+@import "config/colors";
+@import "config/media";
+@import "config/general";
+
+
+/* Atoms */
+@import "atoms/typography";
+@import "atoms/link";
+@import "atoms/logo";
+@import "atoms/images";
+@import "atoms/btn";
+@import "atoms/icons";
+@import "atoms/nav-item";
+@import "atoms/input";
+@import "atoms/swiper-pagination-bullet";
+@import "atoms/burger-button";
+
+
+
+/* Molecules */
+@import "molecules/navigation";
+@import "molecules/image-background";
+@import "molecules/title-block";
+@import "molecules/search-block";
+@import "molecules/destinations-block";
+@import "molecules/slider";
+
+/* Organisms */
+@import "organisms/header";
+@import "organisms/footer";
+@import "organisms/banner";
+
